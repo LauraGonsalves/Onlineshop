@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pg8controller">
+   <top>
+      <AnchorPane prefHeight="388.0" prefWidth="453.0" style="-fx-background-color: #b99fbf;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion layoutX="6.0" />
+            <Accordion layoutX="6.0" />
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" prefHeight="23.0" prefWidth="155.0" text="View All" textFill="#ad3523">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="200.0" />
+                  </content>
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                     </font>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <ListView fx:id="allDetails" layoutX="43.0" layoutY="41.0" prefHeight="286.0" prefWidth="363.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pg1control">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b99fbf;" styleClass="#8f591f" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton layoutX="77.0" layoutY="143.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="318.0" style="-fx-background-color: #ee7385;" text="ADMIN MENU:" textFill="#4622d7">
+              <items>
+                  <Menu mnemonicParsing="false" text="Food">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#foodadd" text="Add Product" />
+                        <MenuItem mnemonicParsing="false" onAction="#foodsale" text="Put On Sale" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Cloth">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clothadd" text="Add Product" />
+                        <MenuItem mnemonicParsing="false" onAction="#clothsale" text="Put On Sale" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Electronic">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#elesadd" text="Add Product" />
+                        <MenuItem mnemonicParsing="false" onAction="#elecsale" text="Put On Sale" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#viewall" text="View All" />
+              </items>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+            <MenuButton layoutX="75.0" layoutY="204.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="321.0" style="-fx-background-color: #ee7385;" text="CUSTOMER MENU:" textFill="#4622d7">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addtocart" text="Add To Cart" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeproduct" text="Remove Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateproduct" text="Update Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewcart" text="View Cart/Pay Bill" />
+              </items>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+            <Text fill="#861364" layoutX="73.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="            ONLINE SHOP" wrappingWidth="324.13671875">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

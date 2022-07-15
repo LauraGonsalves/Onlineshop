@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pg3controller">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b99fbf;" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane animated="false" prefHeight="33.0" prefWidth="141.0" text="Admin:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" layoutY="66.0" prefHeight="33.0" prefWidth="131.0" text="Put on sale:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" layoutY="33.0" prefHeight="33.0" prefWidth="142.0" text="Food:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <Label layoutX="32.0" layoutY="143.0" prefHeight="24.0" prefWidth="159.0" text="Expired days:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="190.0" prefHeight="24.0" prefWidth="174.0" text="Sale percentage:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="expireTF" layoutX="206.0" layoutY="143.0" />
+            <TextField fx:id="saleTF" layoutX="172.0" layoutY="190.0" />
+            <Button layoutX="39.0" layoutY="293.0" mnemonicParsing="false" onAction="#home" prefHeight="40.0" prefWidth="103.0" text="Home" textFill="#ee7385">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="347.0" layoutY="293.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="103.0" text="Ok" textFill="#082757">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

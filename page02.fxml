@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pg2controller">
+   <top>
+      <AnchorPane prefHeight="403.0" prefWidth="480.0" style="-fx-background-color: #b99fbf;" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane animated="false" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: #ee7385;" text="Admin:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" layoutY="33.0" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: #ee7385;" text="Food:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" layoutY="66.0" prefHeight="33.0" prefWidth="142.0" text="Add product:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TextField fx:id="nameTF" layoutX="184.0" layoutY="138.0" />
+            <TextField fx:id="idTF" layoutX="184.0" layoutY="182.0" />
+            <TextField fx:id="quantityTF" layoutX="184.0" layoutY="222.0" />
+            <TextField fx:id="priceTF" layoutX="184.0" layoutY="262.0" />
+            <Label layoutX="48.0" layoutY="137.0" prefHeight="27.0" prefWidth="65.0" text="Name:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="182.0" prefHeight="24.0" prefWidth="68.0" text="Id:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="221.0" prefHeight="27.0" prefWidth="100.0" text="Quantity:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="261.0" prefHeight="27.0" prefWidth="56.0" text="Price:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="302.0" prefHeight="24.0" prefWidth="174.0" text="Expired within days:" textFill="#ad3523">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="expireTF" layoutX="184.0" layoutY="302.0" />
+            <Button layoutX="341.0" layoutY="346.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="103.0" text="Add" textFill="#082757">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="340.0" mnemonicParsing="false" onAction="#confirm" prefHeight="40.0" prefWidth="103.0" text="Home" textFill="#082757">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
